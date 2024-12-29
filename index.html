@@ -105,8 +105,13 @@
         <main role="main">
             <article>
               <h3>SASS</h3>
-              <p class="text_article">Introduction à un préprocesseur CSS <br><iframe src="https://www.youtube.com/embed/W89dfN6ARS4?si=eS06M6qrSanAeFp7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
-            <br>La balise iframe permet d'intégrer du contenu venant du web</p>
+              <p class="text_article">Introduction à un préprocesseur CSS </p><br>
+                <div class="video-container" data-video-url="https://www.youtube.com/embed/W89dfN6ARS4?si=eS06M6qrSanAeFp7">
+                  <img class="video-thumbnail" src="SASS.jfif" alt="Vignette de la vidéo">
+                  <button class="play-button">▶</button>
+                </div>
+                <br>
+            <p class="text_article">La balise iframe permet d'intégrer du contenu venant du web</p>
             </article>
             <div class="grandes_sections">
             <section id="Les-listes">
@@ -243,55 +248,57 @@
                     <h2>Formulaires</h2>
                 </div>
                 <div id="nom_mdp">
-                <form attribut="" method="POST" id="formulaire_nom">
+                <form method="POST" id="formulaire_nom">
                     <label for="nom">Nom :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                     <input type="text" name="nom" id="nom" placeholder="Exemple : Bourema"> <br><br>
                     <label for="mdp">Mot de passe :</label>
-                    <input type="password" name="mdp" id="mdp" placeholder="Entrez votre mot de passe"> <br>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyer"></p>
+                    <input type="password" name="mdp" id="mdp" placeholder="Entrez votre mot de passe"> <br><br>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyer"></p>
                 </form>
                 </div>
                 <div id="commentaire">
-                    <form attribut="" method="POST" id="formulaire_commentaire">
-                    <label for="commentaire">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donnez votre avis :</label> <br><br>
-                    <textarea id="description" name="commentaire" rows="5" cols="35" placeholder="Écrivez votre commentaire ici..."></textarea><br>
+                    <form method="POST" id="formulaire_commentaire">
+                    <label for="commentaire">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donnez votre avis :</label> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="description" name="commentaire" rows="5" cols="35" placeholder="Écrivez votre commentaire ici..."></textarea><br>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyer"></p> 
                     </form>
                 </div>
                 <div id="radio">
-                    <form action="" method="POST">
+                    <form method="POST" id="formulaire_HTML">
                         <label for="formulaire_radio">Quel est votre niveau HTML/CSS :</label><br><br>
-                        <label for="choice1">
-                            <input type="radio" id="choice1" name="options" value="option1">
+                        <label for="option1">
+                            <input type="radio" id="choice1" name="options" value="Débutant">
                             Débutant
                         </label><br>
-                        <label for="choice2">
-                            <input type="radio" id="choice2" name="options" value="option2">
+                        <label for="option2">
+                            <input type="radio" id="choice2" name="options" value="Intermédiaire">
                             Intermédiaire
                         </label><br>
-                        <label for="choice3">
-                            <input type="radio" id="choice3" name="options" value="option3">
+                        <label for="option3">
+                            <input type="radio" id="choice3" name="options" value="Avancé">
                             Avancé
                         </label><br><br>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyer"></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyer"></p>
                     </form>                    
                 </div>
                 <div id="liste">
-                    <form action="" method="POST">
-                        <label for="choix">Quel est votre niveau HTML/CSS :</label>
+                    <form method="POST" id="formulaire_javascript">
+                        <label for="choix">Quel est votre niveau Javascript :</label>
                         <select id="choix" name="choix">
-                            <option value="option1">Débutant</option>
-                            <option value="option2">Intermédiaire</option>
-                            <option value="option3">Avancé</option>
+                            <option value="Débutant">Débutant</option>
+                            <option value="Intermédiaire">Intermédiaire</option>
+                            <option value="Avancé">Avancé</option>
                         </select>
                         <br><br>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyer"></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyer"></p>
                     </form>                   
                 </div>
             </section>
             </div>
      </main>
      <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+     <script type="module" src="formulaire.js"></script>
+     <script type="module" src="evenments.js"></script>
     </body>
     <footer>
         <p class="text_footer1">Nous contacter : </p>

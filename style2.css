@@ -152,19 +152,48 @@
             grid-row: 1/2;
             margin-top: 0;
             height: fit-content;
-            width: fit-content;
+            max-width: 94%;
         }
-
-        iframe {
-            width: 530px; /* Largeur personnalisée */
-            height: 315px; /* Hauteur personnalisée */
-            max-width: 100%; /* S'adapte aux petits écrans */
-          }
 
         .text_article{
             color: white;
             font-family: Arial, "Times new roman", "Courier New", sans-sérif;
         }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 16/9;
+            cursor: pointer;
+        }
+          
+        .video-thumbnail {
+            width: 100%; /* Adapte la largeur de l'image à celle de son conteneur parent. */
+            height: 100%; /* Adapte la hauteur de l'image à celle de son conteneur parent. */
+            object-fit: cover; /* Redimensionne l'image pour remplir le conteneur tout en respectant ses proportions, en rognant si nécessaire. */
+            display: block; /* Supprime l'espace ajouté par défaut par les images (comportement inline-block). */
+        }        
+          
+        .play-button {
+            position: absolute; /* Permet de positionner le bouton relativement à son conteneur parent positionné (dans ce cas, la vidéo). */
+            top: 50%; /* Place le bouton à 50 % de la hauteur du conteneur parent. */
+            left: 50%; /* Place le bouton à 50 % de la largeur du conteneur parent. */
+            transform: translate(-50%, -50%); /* Recentre le bouton exactement au milieu en ajustant ses coordonnées en fonction de sa taille. */
+            background-color: rgba(0, 0, 0, 0.7); /* Définit un arrière-plan noir semi-transparent (70 % d'opacité). */
+            color: white; /* Définit la couleur du texte (symbole "▶") en blanc. */
+            border: none; /* Supprime tout style de bordure par défaut. */
+            border-radius: 50%; /* Transforme le bouton en un cercle parfait. */
+            font-size: 2rem; /* Définit la taille du texte (symbole) à 2 fois la taille de la police de base. */
+            padding: 1rem; /* Ajoute de l'espace autour du contenu (symbole "▶"), augmentant ainsi la taille du bouton. */
+            cursor: pointer; /* Change le curseur en main (indiquant que l'élément est cliquable). */
+            transition: background-color 0.3s; /* Ajoute une transition douce de 0,3 seconde pour les changements de couleur d'arrière-plan. */
+        }
+        
+          
+        .play-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }          
 
         /*Listes*/
 
@@ -428,9 +457,9 @@
                 margin-top: 0;
                 margin-bottom: 20px;
                 height: fit-content;
-                width: 100%;
                 grid-column: 1/2;
                 grid-row: 2/3;
+                max-width: 100%;
             }
         }
 
@@ -547,9 +576,9 @@
                 margin-top: 0;
                 margin-bottom: 20px;
                 height: fit-content;
-                width: 100%;
                 grid-column: 1/2;
                 grid-row: 2/3;
+                max-width: 100%;
             }
 
             iframe {
@@ -562,6 +591,10 @@
         @media screen and (max-width: 1420px){
             #star, #star2 {
                 display: none;
+            }
+
+            article{
+                max-width: 100%;
             }
         }
  
