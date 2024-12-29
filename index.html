@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <!-- Encodage-->
         <meta charset ="utf-8" />
@@ -104,7 +104,7 @@
           </nav><br>   
         <main role="main">
             <article>
-              <h3>SASS</h3>
+              <h2>SASS</h2>
               <p class="text_article">Introduction à un préprocesseur CSS </p><br>
                 <div class="video-container" data-video-url="https://www.youtube.com/embed/W89dfN6ARS4?si=eS06M6qrSanAeFp7">
                   <img class="video-thumbnail" src="SASS.jfif" alt="Vignette de la vidéo">
@@ -115,12 +115,12 @@
             </article>
             <div class="grandes_sections">
             <section id="Les-listes">
-                <h2>Les listes</h2>
+                <h3>Les listes</h3>
                 <p>Il existe deux types de listes, les listes ordonnées qu'on construit à l'aide des balises ol et li : </p><ol><li>Ceci est</li><li>une liste</li><li>ordonnées</li></ol>
                 <p>Et les listes non ordonnées qu'on construit à partir des balises ul et li : </p><ul><li>Ceci est</li><li>une liste</li><li>non ordonnées</li></ul>
             </section>
             <section id="Les-section">
-              <h2>Les différentes sections</h2>
+              <h3>Les différentes sections</h3>
               <div class="table_container">
               <table>
                   <caption> Ce tableau n'a pas besoin de légende</caption>
@@ -187,7 +187,7 @@
           </div>
           </section>
             <section id="block-ou-inline">
-                <h2>Les différents types de balise (block ou inline)</h2>
+                <h3>Les différents types de balise (block ou inline)</h3>
                 <p class="sections">
                     <mark>Balises Block</mark> : <br>
                     <b>Utilité</b> : Les éléments <i>block-level</i> occupent toute la largeur disponible et commencent sur une nouvelle ligne.<br>
@@ -211,7 +211,7 @@
             </section>
           </section>
             <section id="les-balises-de-style">
-              <h2>Les balises de styles :</h2>
+              <h3>Les balises de styles :</h3>
                 <ul>
                     <p>
                     <li>La balise <b>b</b> qui permet de mettre un texte en gras mais aussi la balise <strong>strong</strong> qui en plus de mettre le texte en gras lui accorde une importance dans la page web</li>
@@ -219,15 +219,15 @@
                     <li id="priorite">La balise <mark>mark</mark> permet de mettre en évidence une partie de texte en lui donnant une couleur de fond différente</li>
                     <li>La balise <small>small</small> permet de diminuer la taille d'un texte, elle est souvent utilisée en conjonction avec les balises <sup>sup</sup> et <sub>sub</sub> pour ajouter des indices
                     supérieurs et inférieurs</li>
-                    <li>La balise <a class="lien" href="file:///C:/Users/MSI/Documents/Formation%20d%C3%A9veloppeur%20web/Codes/HTML/Site_association/index.html" target="_parent" title="Site web developpé dans le cadre du suivi de ma formation en 2021">a combinée avec l'attribut href permet de creer un lien hypertexte</a></li>
-                    <li><a href=”mailto:mehdibourema@outlook.fr”>Contactez-nous</a></li>
-                    <li>La balise audio <audio autoplay muted src="C:/Users/MSI/Documents/Formation développeur web/Sons/ICftyZvakF0_Kaaris---Gun-salute"></audio> permet d'inclure des audio à notre fichier html</li>    
+                    <li>La balise <a class="lien" href="https://www.w3schools.com/tags/att_a_href.asp" target="_blank" title="En savoir plus sur l'attribut href">a combinée avec l'attribut href permet de creer un lien hypertexte</a></li>
+                    <li><a href="mailto:mehdibourema@outlook.fr">Contactez-nous</a></li>
+                    <li>La balise audio <audio controls><source src="Bruit blanc Oiseaux, Forêt.mp3" type="audio/mp3"> Votre navigateur ne prends pas en charge cet audio</audio> permet d'inclure des audio à notre fichier html</li>    
                     <li>La balise <br>br<br> permet d'effectuer un saut de ligne, tandis que la balise <hr>hr<hr> effectue une séparation horizontale du texte</li>
                     <li>La balise <blockquote>blockquote</blockquote> permet de signifier une citation</li>
                     </p>
                 </ul>
                 <section id="Photos-et-videos">
-                <h2>Quelques balises pour afficher des photos et vidéos</h2>
+                <h3>Quelques balises pour afficher des photos et vidéos</h3>
                 <ul>
                     <p>
                     <li>La balise img permet d'afficher une image : <br><img class="image" src="code javascript.jpg" alt="Ben arfa a envie de faire une grande saison"><br></li>
@@ -237,29 +237,34 @@
                         <img class= "image_default" src="javascript petit.png" alt="petit">
                     </picture><br></li>  
                     <li>La balise vidéo permet d'afficher des vidéos <br>
-                    Cette balise peut aussi être utilisée en conjonction avec la balise source <br><video controls><source src="fizz_jinx.mp4" type="video/mp4"></video><br></li>
+                    Cette balise peut aussi être utilisée en conjonction avec la balise source <br><video controls>
+                      <source src="fizz_jinx.mp4" type="video/mp4">
+                      <track src="fizz_jinx_captions_en.vtt" kind="captions" srclang="en" label="English" default>
+                      Désolé, votre navigateur ne prend pas en charge les vidéos HTML5.
+                    </video>
+                    <br></li>
                     <li>La balise embed permet l'intégration de plug-in <br><embed src="Bourema-Mehdi-RapportM2S4.pdf" type="application/pdf"></li><br>
-                    <li>La balise object offre une plus grande variété de contenu <br><object id="cv" data="nph19471-sup-0001-supinfo.pdf" type="application/pdf"></object></li><br>
+                    <li>La balise object offre une plus grande variété de contenu <br><object id="cv" data="nph19471-sup-0001-supinfo.pdf" type="application/pdf">Votre navigateur ne prends pas en charge ce pdf</object></li><br>
                     </p> 
                 </ul>
              </section>
              <section id="formulaires">
                 <div id="titre_formulaire">
-                    <h2>Formulaires</h2>
+                    <h3>Formulaires</h3>
                 </div>
                 <div id="nom_mdp">
                 <form method="POST" id="formulaire_nom">
-                    <label for="nom">Nom :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" name="nom" id="nom" placeholder="Exemple : Bourema"> <br><br>
+                    <label for="name">Nom :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="Nom" id="nom" placeholder="Exemple : Bourema"> <br><br>
                     <label for="mdp">Mot de passe :</label>
-                    <input type="password" name="mdp" id="mdp" placeholder="Entrez votre mot de passe"> <br><br>
+                    <input type="password" name="Mot de passe" id="mdp" placeholder="Entrez votre mot de passe"> <br><br>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyer"></p>
                 </form>
                 </div>
                 <div id="commentaire">
                     <form method="POST" id="formulaire_commentaire">
                     <label for="commentaire">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donnez votre avis :</label> <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="description" name="commentaire" rows="5" cols="35" placeholder="Écrivez votre commentaire ici..."></textarea><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="description" name="Commentaire" rows="5" cols="35" placeholder="Écrivez votre commentaire ici..."></textarea><br>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyer"></p> 
                     </form>
                 </div>
@@ -267,15 +272,15 @@
                     <form method="POST" id="formulaire_HTML">
                         <label for="formulaire_radio">Quel est votre niveau HTML/CSS :</label><br><br>
                         <label for="option1">
-                            <input type="radio" id="choice1" name="options" value="Débutant">
+                            <input type="radio" id="choice1" name="Niveau" value="Débutant">
                             Débutant
                         </label><br>
                         <label for="option2">
-                            <input type="radio" id="choice2" name="options" value="Intermédiaire">
+                            <input type="radio" id="choice2" name="Niveau" value="Intermédiaire">
                             Intermédiaire
                         </label><br>
                         <label for="option3">
-                            <input type="radio" id="choice3" name="options" value="Avancé">
+                            <input type="radio" id="choice3" name="Niveau" value="Avancé">
                             Avancé
                         </label><br><br>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Envoyer"></p>
@@ -284,7 +289,7 @@
                 <div id="liste">
                     <form method="POST" id="formulaire_javascript">
                         <label for="choix">Quel est votre niveau Javascript :</label>
-                        <select id="choix" name="choix">
+                        <select id="choix" name="Niveau">
                             <option value="Débutant">Débutant</option>
                             <option value="Intermédiaire">Intermédiaire</option>
                             <option value="Avancé">Avancé</option>

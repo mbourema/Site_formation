@@ -1,5 +1,10 @@
         /*Header and footer*/
 
+        body {
+            background-color: #fefeff;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }          
+
         header, footer {
             display: grid;
             grid-template-rows: 0.5fr, 1fr, 1fr, 0.5fr;
@@ -69,12 +74,12 @@
         }
 
         h2{
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 700;
             font-family: Arial, "Times new roman", "Courier New", sans-sérif;
             text-align: center;
             text-decoration: underline;
-            color: red;
+            color: white;
         }
 
         h3{
@@ -82,19 +87,19 @@
             font-weight: bold;
             font-family: Arial, "Times new roman", "Courier New", sans-sérif;
             text-align: center;
-            color: white;
+            color: red;
         }
 
         /*Navbar*/
 
         .navbar-color{
-            background-color: #FDDB9B;
+            background-color: #fde6bb;
         }
 
         /* Cacher par défaut les sous-menus */
         .dropdown-menu {
             display: none;
-            background-color: #FDDB9B;;
+            background-color: #fde6bb;;
         }
   
         /* Afficher les sous-menus lorsque l'utilisateur survole l'élément parent */
@@ -125,7 +130,7 @@
         }
 
         #Les-listes, #Les-section, #block-ou-inline, #les-balises-de-style, #Photos-et-videos, #formulaires{
-            background-color: #FDDB9B;
+            background-color: #fde6bb;
             border-radius: 10px;
         }
 
@@ -289,10 +294,9 @@
             grid-row: 5/6;
         }
 
-        .image, .image_grande, .image_moyenne, .image_default, video, embed, object{
-            width: 30%;
-            max-width: 100%;
-            height: auto;
+        .image, .image_default, video, embed, object{
+            max-width: 20%;
+            max-height: 20%;
             border: 2px solid black;
         }
 
