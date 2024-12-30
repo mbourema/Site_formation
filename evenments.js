@@ -42,14 +42,12 @@ container.appendChild(iframe);
 const envoyer = document.getElementById("envoi");
 
 envoyer.addEventListener('click', () => {
-  window.open("Validation_formulaire.html", "_blank");
+  window.open(
+    "Validation_formulaire.html", // URL de la page
+    "_blank",           // Nom de la fenêtre
+    "width=500,height=250"        // Options de la fenêtre
+  );
 });
-
-const fermer = document.getElementById("ferme");
-
-fermer.addEventListener('click', () => {
-  window.close()
-})
 
 
 

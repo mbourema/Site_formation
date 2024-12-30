@@ -64,6 +64,13 @@
             font-family: Arial, "Times new roman", "Courier New", sans-sérif;
         }
 
+        #ferme{
+            margin-left: 37%;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+        }
+
         /*Titles*/
         h1 {
             border: 2px solid red;
