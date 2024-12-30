@@ -306,7 +306,7 @@
             grid-column: 1/2;
             grid-row: 6/7;
             display:grid;
-            grid-template-rows: 0.5fr, 1fr;
+            grid-template-rows: 0.5fr, 1fr, 0.5fr;
             grid-template-columns: repeat(4, 1fr);
         }
 
@@ -342,6 +342,18 @@
 
         #description{
             resize : vertical;
+        }
+
+        #footer_formulaire{
+            grid-row: 3/4;
+            grid-column: 1/4;
+        }
+
+        #Soumettre{
+            font-size: 15px;
+            font-weight: bold;
+            font-family: Arial, "Times new roman", "Courier New", sans-sérif;
+            color: red;
         }
 
         /********************************************************************* Media queries  *********************************************************************/
@@ -422,7 +434,7 @@
 
             #formulaires{
                 display:grid;
-                grid-template-rows: 0.5fr, repeat(4, 1fr);
+                grid-template-rows: 0.5fr, repeat(4, 1fr), 0.5fr;
                 grid-template-columns: 1fr;
             }
     
@@ -451,6 +463,10 @@
     
             #liste{
                 grid-row: 5/6;
+            }
+
+            #footer_formulaire{
+                grid-row: 6/7;
             }
 
             iframe{

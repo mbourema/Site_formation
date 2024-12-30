@@ -39,6 +39,18 @@ container.appendChild(iframe);
     });
 });
 
+const envoyer = document.getElementById("envoi");
+
+envoyer.addEventListener('click', () => {
+  window.open("Validation_formulaire.html", "_blank");
+});
+
+const fermer = document.getElementById("ferme");
+
+fermer.addEventListener('click', () => {
+  window.close()
+})
+
 
 
 
