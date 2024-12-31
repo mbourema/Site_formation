@@ -1,5 +1,8 @@
 import Formulaire from "./formulaire.js";
 
+
+// Ajout d'une action lorsqu'on clique sur le bouton vérifier -> affichage d'un récapitulatif 
+
 const ids_formulaires = ['formulaire_nom', 'formulaire_commentaire', 'formulaire_HTML', 'formulaire_javascript'];
 
 for (const id of ids_formulaires) {
@@ -11,6 +14,8 @@ for (const id of ids_formulaires) {
     console.log(Formulaire_id.awnser);
 });
 }
+
+// Façade pour charger l'iframe youtube en différé
 
 // Sélectionne tous les éléments avec la classe "video-container"
 const videoContainers = document.querySelectorAll('.video-container'); 
@@ -39,15 +44,51 @@ container.appendChild(iframe);
     });
 });
 
+
+// Action lorsque le bouton "soummettre" est cliqué et lorsque le bouton "quitter la page est cliqué"
+
 const envoyer = document.getElementById("envoi");
 
 envoyer.addEventListener('click', () => {
-  window.open(
+  let validation = window.open(
     "Validation_formulaire.html", // URL de la page
     "_blank",           // Nom de la fenêtre
     "width=500,height=250"        // Options de la fenêtre
   );
+  validation.addEventListener('load', () => {
+    const bouton_fermer = validation.document.getElementById("ferme");
+    bouton_fermer.addEventListener('click', () => {
+      validation.close();
+    })
+  })
 });
+
+// Action pour enregistrer les données du formulaire de connections sous forme de cookies
+
+// Fonction pour créer un cookie
+function setCookie(name, value, days) {
+  const date = new Date();
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Durée en jours
+  const expires = "expires=" + date.toUTCString();
+  const secure = "Secure"; // Ajout de l'option Secure
+  document.cookie = `${name}=${value}; ${expires}; ${secure}`; // path=; domain= ; secure;
+}
+
+// Gestion du clic sur le bouton "Connexion"
+document.getElementById("connexion").addEventListener("click", function () {
+  const nom = document.getElementById("nom").value;
+  const prenom = document.getElementById("prenom").value;
+  const email = document.getElementById("email").value;
+
+  // Enregistrer les informations sous forme de cookies
+  setCookie("nom", nom, 7); // Durée de 7 jours
+  setCookie("prenom", prenom, 7);
+  setCookie("email", email, 7);
+
+  alert("Informations enregistrées sous forme de cookies !");
+  console.log(document.cookie);
+});
+
 
 
 

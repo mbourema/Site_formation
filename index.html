@@ -63,8 +63,7 @@
                       <li><a class="dropdown-item" href="#">Balises block</a></li>
                       <li><a class="dropdown-item" href="#">Balises inline</a></li>
                     </ul>
-                  </div>
-        
+                  </div>        
                   <!-- Les balises de style -->
                   <div class="col-sm dropdown">
                     <a class="nav-link dropdown-toggle" href="#les-balises-de-style" id="dropdownStyle" role="button">Les balises de style</a>
@@ -103,6 +102,24 @@
             </div>
           </nav><br>   
         <main role="main">
+            <div id="connexion_article">
+            <section class="formulaire_de_connexion">
+              <h3>Espace de connexion</h3>
+              <form method="POST" id="formulaire_nom">
+                <fieldset>
+                  <legend>Informations personnelles</legend>
+                <label for="forname">Nom :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="Nom" id="nom" placeholder="Exemple : Bourema" size="30"> <br><br>
+                <label for="name">Prénom :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="Prénom" id="prenom" placeholder="Exemple : Mehdi" size="30"> <br><br>
+                <label for="name">E-mail :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="E-mail" id="email" placeholder="Exemple : spaacetree@gmail.com" size="30"> <br><br>
+                <label for="mdp">Mot de passe :</label>
+                <input type="password" name="Mot de passe" id="mdp" placeholder="Entrez votre mot de passe" size="30"> <br><br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Vérifier">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="connexion" type="button" value="Connexion"></p>
+              </fieldset>
+            </form>
+            </section>
             <article>
               <h2>SASS</h2>
               <p class="text_article">Introduction à un préprocesseur CSS </p><br>
@@ -113,6 +130,7 @@
                 <br>
             <p class="text_article">La balise iframe permet d'intégrer du contenu venant du web</p>
             </article>
+          </div>
             <div class="grandes_sections">
             <section id="Les-listes">
                 <h3>Les listes</h3>
@@ -226,6 +244,8 @@
                     <li>La balise <blockquote>blockquote</blockquote> permet de signifier une citation</li>
                     </p>
                 </ul>
+            </section>
+                <br>
                 <section id="Photos-et-videos">
                 <h3>Quelques balises pour afficher des photos et vidéos</h3>
                 <ul>
@@ -248,18 +268,10 @@
                     </p> 
                 </ul>
              </section>
+             <br>
              <section id="formulaires">
                 <div id="titre_formulaire">
                     <h3>Formulaires</h3>
-                </div>
-                <div id="nom_mdp">
-                <form method="POST" id="formulaire_nom">
-                    <label for="name">Nom :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" name="Nom" id="nom" placeholder="Exemple : Bourema"> <br><br>
-                    <label for="mdp">Mot de passe :</label>
-                    <input type="password" name="Mot de passe" id="mdp" placeholder="Entrez votre mot de passe"> <br><br>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Vérifier"></p>
-                </form>
                 </div>
                 <div id="commentaire">
                     <form method="POST" id="formulaire_commentaire">
