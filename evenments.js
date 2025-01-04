@@ -63,7 +63,7 @@ envoyer.addEventListener('click', () => {
   })
 });
 
-// Action pour enregistrer les données du formulaire de connections sous forme de cookies
+// Action pour enregistrer les données du formulaire de connection sous forme de cookies
 
 // Fonction pour créer un cookie
 function setCookie(name, value, days) {
@@ -88,6 +88,42 @@ document.getElementById("connexion").addEventListener("click", function () {
   alert("Informations enregistrées sous forme de cookies !");
   console.log(document.cookie);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const bouton = document.querySelector(".bouton_contenu");
+  const cv = document.getElementById("cv");
+  let etat = "changer"; // Variable d'état pour suivre l'état actuel du bouton
+
+  bouton.addEventListener("click", function() {
+    if (etat === "changer") {
+      const xmlhttp_changer = new XMLHttpRequest();
+      xmlhttp_changer.open('GET', 'https://ressources.studi.fr/contenus/opale/ae6b346be069946080bff9191931086632148844/co/format-json-ajax_pdf/format-json-ajax_pdf.pdf', true);
+      xmlhttp_changer.responseType = 'blob';
+      xmlhttp_changer.onload = function() {
+        if (xmlhttp_changer.status === 200) {
+          const url_objet = URL.createObjectURL(xmlhttp_changer.response);
+          cv.data = url_objet;
+          etat = "revenir"; // Mettre à jour l'état après le changement
+        } else {
+          cv.innerHTML = "La ressource n'a pas pu être chargée";
+        }
+      };
+      xmlhttp_changer.send();
+    } else if (etat === "revenir") {
+      cv.data = "nph19471-sup-0001-supinfo.pdf";
+      etat = "changer"; // Réinitialiser l'état après le retour
+    } else {
+      console.log("Erreur : état inconnu");
+    }
+  });
+});
+
+
+
+
+
+
+
 
 
 
