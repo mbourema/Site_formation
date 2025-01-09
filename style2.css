@@ -442,7 +442,7 @@
                 font-size: 20px;
             }
 
-            #star, #star2, nav ul li ul li, .table_container, article {
+            #star, #star2, nav ul li ul li, .table_container, .connexion_article {
                 display: none;
             }
 
@@ -576,7 +576,7 @@
                 font-size: 20px;
             }
 
-            #star, #star2, nav ul li ul li, .table_container, article {
+            #star, #star2, nav ul li ul li, .table_container, .connexion_article {
                 display: none;
             }
 
