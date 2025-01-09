@@ -450,6 +450,7 @@
                 display : grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
+                max-width: 100%;
             }
 
             #connexion_article{
@@ -470,6 +471,10 @@
                 font-size: 0.5rem;
             }
 
+            .table_container{
+                display: none;
+            }
+            
             .table_container2, #star3, #star4{
                 display: block;
             }
