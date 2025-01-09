@@ -395,7 +395,7 @@
         /********************************************************************* Media queries  *********************************************************************/
         /* Styles pour les écrans mobiles */
 
-        @media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3) {
+        @media screen and (max-width: 768px) {
               
             header {
                 display: grid;
@@ -450,7 +450,6 @@
                 display : grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
-                max-width: 100%;
             }
 
             #connexion_article{
@@ -471,10 +470,6 @@
                 font-size: 0.5rem;
             }
 
-            .table_container{
-                display: none;
-            }
-            
             .table_container2, #star3, #star4{
                 display: block;
             }
@@ -581,7 +576,7 @@
                 font-size: 20px;
             }
 
-            #star, #star2, nav ul li ul li {
+            #star, #star2, nav ul li ul li, .table_container {
                 display: none;
             }
 
@@ -609,7 +604,7 @@
                 font-size: 0.5rem;
             }
 
-            #star3, #star4{
+            #star3, #star4, .table_container2{
                 display: block;
             }
 
