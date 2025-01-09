@@ -395,7 +395,7 @@
         /********************************************************************* Media queries  *********************************************************************/
         /* Styles pour les écrans mobiles */
 
-        @media screen and (max-width: 390px) {
+        @media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3) {
               
             header {
                 display: grid;
