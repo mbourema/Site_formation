@@ -302,6 +302,7 @@
             display: grid;
             grid-template-columns: 2fr 0.5fr 4fr;
             grid-template-rows: 1fr 0.3fr 0.5fr;
+            max-width: 100%;
         }
 
         #cv {
@@ -442,7 +443,7 @@
                 font-size: 20px;
             }
 
-            #star, #star2, nav ul li ul li, .table_container, #Photos-et-videos {
+            #star, #star2, nav ul li ul li, .table_container {
                 display: none;
             }
 
@@ -576,7 +577,7 @@
                 font-size: 20px;
             }
 
-            #star, #star2, nav ul li ul li, .table_container, #Photos-et-videos {
+            #star, #star2, nav ul li ul li, .table_container {
                 display: none;
             }
 
