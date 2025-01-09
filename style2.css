@@ -442,7 +442,7 @@
                 font-size: 20px;
             }
 
-            #star, #star2, nav ul li ul li, .table_container {
+            #star, #star2, nav ul li ul li, .table_container, article {
                 display: none;
             }
 
@@ -450,7 +450,6 @@
                 display : grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto; 
-                max-width: 100%;
             }
 
             #connexion_article{
@@ -577,7 +576,7 @@
                 font-size: 20px;
             }
 
-            #star, #star2, nav ul li ul li, .table_container {
+            #star, #star2, nav ul li ul li, .table_container, article {
                 display: none;
             }
 
@@ -585,7 +584,6 @@
                 display : grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
-                max-width: 100%;
             }
 
             #connexion_article{
