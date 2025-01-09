@@ -449,7 +449,8 @@
             main{
                 display : grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: auto;
+                grid-template-rows: auto; 
+                max-width: 100%;
             }
 
             #connexion_article{
@@ -584,6 +585,7 @@
                 display : grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
+                max-width: 100%;
             }
 
             #connexion_article{
