@@ -78,7 +78,7 @@
                   </div>        
                   <!-- Photos et vidéos -->
                   <div class="col-sm dropdown">
-                    <a class="nav-link dropdown-toggle" href="#Photos-et-videos" id="dropdownMedia" role="button">Photos et vidéos</a>
+                    <a class="nav-link dropdown-toggle" href="#Contenu_intergre" id="dropdownMedia" role="button">Contenus intégrés</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMedia">
                       <li><a class="dropdown-item" href="#">La balise img</a></li>
                       <li><a class="dropdown-item" href="#">La balise picture</a></li>
@@ -245,8 +245,8 @@
                     </p>
                 </ul>
             </section>
-                <section id="Photos-et-videos">
-                <h3>Quelques balises pour afficher des photos et vidéos</h3>
+                <section id="Contenu_intergre">
+                <h3>Quelques balises pour afficher des contenus intégrés</h3>
                 <ul>
                     <p>
                     <li>La balise img permet d'afficher une image : <br><img class="image" src="code javascript.jpg" alt="Ben arfa a envie de faire une grande saison"><br></li>
@@ -268,6 +268,20 @@
                     <div id="changement_de_contenu">
                     <object id="cv" data="nph19471-sup-0001-supinfo.pdf" type="application/pdf">Votre navigateur ne prends pas en charge ce pdf</object>
                     <input id="changer" class="bouton_contenu" type="button" value="Changer le contenu">
+                    </div>
+                    <br>
+                    <li>La balise canvas permet d'ajouter des graphiques à l'aide de la bibliothèque chart.js :</li>
+                    <br>
+                    <div id="chart.js">
+                    <canvas id="graphique" aria-label="graphique" role="img">Canvas non disponible</canvas>
+                    </div>
+                    <br>
+                    <li>Dessin 2d de formes à l'aide des méthodes de l'API canvas : </li>
+                    <br>
+                    <div id="canva_test">
+                      <canvas id="dessin_canva">Canvas non disponible</canvas>
+                      <br>
+                      <canvas id="graphique_point" width="500" height="500">Canvas non disponible</canvas>
                     </div>
                     </p> 
                 </ul>
@@ -322,6 +336,8 @@
      <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
      <script type="module" src="formulaire.js"></script>
      <script type="module" src="evenments.js"></script>
+     <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+     <script src="chart.js"></script>
     </body>
     <footer>
         <p class="text_footer1">Nous contacter : </p>
