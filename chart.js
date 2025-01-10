@@ -1,4 +1,4 @@
-let ctx = document.getElementById("#graphique");
+let ctx = document.getElementById("graphique");
 new Chart(ctx, {
             type: "pie",
             data: {
@@ -22,6 +22,7 @@ new Chart(ctx, {
 
 }
 });
+
 
 const dessin_canva = document.getElementById("dessin_canva");
 const dessin_2d_canva = dessin_canva.getContext('2d'); // Correction du nom de méthode
@@ -78,7 +79,7 @@ dessin_2d_canva.stroke(); // Trace les lignes
 
 // Dessiner un graphique statistique
 
-const graphique_points = document.getElementById("graphique_point");
+const graphique_points = document.getElementById("point");
 const graphique_point = graphique_points.getContext("2d");
 
 const createAxeX = (marks, scale, unit, label) => {
