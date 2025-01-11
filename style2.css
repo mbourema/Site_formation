@@ -503,7 +503,7 @@
             #changer, #revenir{
                 grid-column: 1/2;
                 grid-row: 2/3;
-                max-width: 30%;
+                max-width: 50%;
             }
 
             #formulaires{
@@ -541,6 +541,11 @@
 
             iframe{
                 width:100%;
+            }
+
+            video, embed{
+                max-width: 70%;
+                max-height: 70%;
             }
         }
 
@@ -660,6 +665,15 @@
                 height: 515px; /* Hauteur personnalisée */
                 max-width: 100%; /* S'adapte aux petits écrans */
               }
+            
+            #changer, #revenir {
+                max-width: 50%;
+            }
+
+            video, embed{
+                max-width: 70%;
+                max-height: 70%;
+            }
         }
 
         @media screen and (max-width: 1420px){
